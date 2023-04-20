@@ -1,4 +1,6 @@
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +10,6 @@ body{
     font-size: 15px;
 }
 .section-center{
-    max-width: 1440px;
     min-height: 100vh;
     background-color: hsl(212, 45%, 89%);
     display: flex;
@@ -21,31 +22,23 @@ body{
     border-radius: 13px;
     background-color: #fff;
     max-width: 18rem;
-    display:flex;
-    flex-direction: column;
-    row-gap: 1.3rem;
     margin-bottom:2rem;
 }
 .img-qr{
-    height: 230px;
-    width:100%;
+    max-width:100%;
     border-radius:7px;
 }
 .qr-content{
-    padding:0 0.8rem 1.3rem 0.8rem;
-    display:flex;
-    flex-direction:column;
-    row-gap:0.8rem;
+    font-size:0.9rem;
     text-align: center;
+    color:hsl(220, 15%, 55%);
+    margin:1.5rem 0.5rem;
 }
 .title{
-    font-size:1.2rem;
+    font-size:1.3rem;
     font-weight:700;
     color:hsl(218, 44%, 22%);
-}
-.desc{
-    color:hsl(220, 15%, 55%);
-    font-size:0.9rem;
+    margin-bottom:1rem;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
